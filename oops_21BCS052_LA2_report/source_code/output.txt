@@ -1,0 +1,21 @@
+default_constructor.cpp
+Object is being created using Default constructor
+Length of line: 6
+
+parameterised_constructor.cpp
+Object is being created using default constructor
+Length of line using default constructor: 0
+Object is being created using Parameterised (6) constructor
+Length of line using parametrized constructor: 6
+
+Object is being created
+destructor.cpp
+Length of line : 6
+
+Object is being deleted
+copy_constructor.cpp
+Object is being created using Default constructor
+Length of line: 6
+Object is being created using Copy constructor
+Length of copied line: 6
+

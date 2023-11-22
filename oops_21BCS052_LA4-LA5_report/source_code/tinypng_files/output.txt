@@ -1,0 +1,9 @@
+tinypng_thing.cpp
+Height: 512
+Width: 512
+Luminance Intensity at cordinate : { 128, 128 } of 512x512 PNG31
+Luminance Intensity at cordinate : { 384, 256 } of 512x512 PNG70
+Luminance Intensity at cordinate : { 384, 384 } of 512x512 PNG45
+PointLB < PointMid: 1
+PointMid < PointRT: 0
+PointLB < PointRT: 1

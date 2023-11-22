@@ -1,0 +1,14 @@
+hello_world.cpp
+Hello, World!
+
+clock.cpp
+Time (Standard): 03:30:45 PM
+Time (Military): 15:30:45
+Time (Standard): 12:30:45 AM
+Time (Military): 00:30:45
+
+weight_conversion.cpp
+Enter the weight in pounds: 1.5 pounds is 0.680388 kilograms.
+
+Enter the weight in kilograms: 0.680388 kilograms is 1.5 pounds.
+
