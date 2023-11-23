@@ -6,12 +6,11 @@ using namespace std;
 
 class SortFunctions {
    public:
-    static void sort_algo_1(Element *to_sort[], const int N);
-    static void sort_algo_2(Element *to_sort[], const int N);
-    static void sort_algo_3(Element *to_sort[], const int N);
+    static void slow_sort(Element *to_sort[], const int N);
+    static void fast_memo(Element *to_sort[], const int N);
 };
 
-void SortFunctions::sort_algo_1(Element *to_sort[], const int N) {
+void SortFunctions::slow_sort(Element *to_sort[], const int N) {
     int i, j;
     Element *key = nullptr;
     for (i = 1; i < N; i++) {
@@ -25,14 +24,23 @@ void SortFunctions::sort_algo_1(Element *to_sort[], const int N) {
     }
 }
 
-void SortFunctions::sort_algo_2(Element *to_sort[], const int N) {
-    for (int i = 0; i < N - 1; i++) {
-        for (int j = 0; j < N - i - 1; j++) {
-            if (to_sort[j]->norm() > to_sort[j + 1]->norm()) {
-                Element *temp = to_sort[j];
-                to_sort[j] = to_sort[j + 1];
-                to_sort[j + 1] = temp;
-            }
+void SortFunctions::fast_memo(Element *to_sort[], const int N) {
+    int i, j;
+    double memo[N];
+    for (size_t i = 0; i < N; i++) {
+        memo[i] = to_sort[i]->norm();
+    }
+
+    for (i = 1; i < N; i++) {
+        Element *key = to_sort[i];
+        double memo_norm = memo[i];
+        j = i - 1;
+        while (j >= 0 && memo[j] > memo[i]) {
+            to_sort[j + 1] = to_sort[j];
+            memo[j] = memo[j + 1];
+            j -= 1;
         }
+        to_sort[j + 1] = key;
+        memo[j + 1] = memo_norm;
     }
 }

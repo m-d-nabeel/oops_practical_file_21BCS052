@@ -5,9 +5,11 @@
 using namespace std;
 
 double rand_gen() {
-    double lower_bound = 0, upper_bound = 100;
-    uniform_real_distribution<double> unif(lower_bound, upper_bound);
-    default_random_engine re;
+    static double lower_bound = 0;
+    static double upper_bound = 100;
+    static std::uniform_real_distribution<double> unif(lower_bound,
+                                                       upper_bound);
+    static std::default_random_engine re(std::random_device{}());
     return unif(re);
 }
 
