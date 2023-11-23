@@ -2,8 +2,8 @@ Roll Number,Date,Present,Work Completed,Work Evaluated,Code Available,Report Ava
 21BCS052,1/8/2023,,,,,,
 21BCS052,8/8/2023,,,,,,
 21BCS052,15/8/2023,,,,,,
-21BCS052,22/8/2023,Y,Y,Y,Y,Y,Understanding of C++ Basics
-21BCS052,29/8/2023,Y,Y,Y,Y,Y,Learned about constructors in C++
+21BCS052,22/8/2023,Y,Y,Y,Y,Y,"Understanding of C++ Basics"
+21BCS052,29/8/2023,Y,Y,Y,Y,Y,"Learned about constructors in C++"
 21BCS052,5/9/2023,Y,Y,Y,Y,Y,"Learned about access modifiers, static variables, const members, and arrays of objects."
 21BCS052,12/9/2023,Y,Y,Y,Y,Y,"Learned operator overloading in C++ to redefine operators for a 2D point class, enhancing its functionality and enabling customized operations."
 21BCS052,19/9/2023,Y,Y,Y,Y,Y,"Explored advanced operator overloading in C++ within a Point class, incorporating subscript, stream, and comparison operators, while evaluating the performance of insertion sort algorithms for Point objects."
