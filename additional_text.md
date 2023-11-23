@@ -40,3 +40,5 @@ public:
 # 6. Normal Constructor Without Copy Constructor
 
 If you write a normal constructor and don't write a copy constructor, the compiler will generate a default copy constructor for you. However, this may lead to unexpected behavior if your class manages resources, and a custom copy constructor may be needed.
+
+[(Doc for Self-Assignment)](https://docs.google.com/spreadsheets/d/1tI01pRq3_3VPQOCS7tZbtTpAQtwKEvDLfWq1whiX4vs/edit#gid=0)
