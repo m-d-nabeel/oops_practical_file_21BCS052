@@ -34,6 +34,7 @@ public:
         // Copy constructor implementation
     }
     // No default constructor
+}
 ```
 
 # 6. Normal Constructor Without Copy Constructor
