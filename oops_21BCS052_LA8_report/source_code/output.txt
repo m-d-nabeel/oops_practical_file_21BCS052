@@ -1,0 +1,16 @@
+polymorphism.cpp
+
+Average time taken running the executor 10 times
+Size = 10 | Average time taken by executor 1 = 4.4 µs | Average time taken by executor 2 = 5.3 µs | Average speed ratio 2/1 = 1.20455
+
+Size = 100 | Average time taken by executor 1 = 294.6 µs | Average time taken by executor 2 = 618.8 µs | Average speed ratio 2/1 = 2.10048
+
+Size = 500 | Average time taken by executor 1 = 7467.3 µs | Average time taken by executor 2 = 15890.3 µs | Average speed ratio 2/1 = 2.12798
+
+Size = 1000 | Average time taken by executor 1 = 28675 µs | Average time taken by executor 2 = 63441.5 µs | Average speed ratio 2/1 = 2.21243
+
+Size = 5000 | Average time taken by executor 1 = 691301 µs | Average time taken by executor 2 = 1.56636e+06 µs | Average speed ratio 2/1 = 2.26581
+
+Size = 10000 | Average time taken by executor 1 = 2.78603e+06 µs | Average time taken by executor 2 = 6.32325e+06 µs | Average speed ratio 2/1 = 2.26963
+
+Average time taken by executor 1 = 3513772 µs | Average time taken by executor 2 = 7969567 µs | 

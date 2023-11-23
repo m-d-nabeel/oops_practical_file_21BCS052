@@ -1,0 +1,136 @@
+-------------------START-------------------
+
+-------------------SINGLE THREADED-------------------
+Time Elapsed for 100 = 0
+Time Elapsed for 1000 = 2
+Time Elapsed for 10000 = 10
+Time Elapsed for 100000 = 124
+Time Elapsed for 1000000 = 1355
+-------------------MULTIPLE THREADED-------------------
+THREADS = 1
+Time Elapsed for 100 = 4
+Time Elapsed for 1000 = 2
+Time Elapsed for 10000 = 12
+Time Elapsed for 100000 = 103
+Time Elapsed for 1000000 = 1312
+-------------------END-------------------
+
+-------------------START-------------------
+
+-------------------SINGLE THREADED-------------------
+Time Elapsed for 100 = 0
+Time Elapsed for 1000 = 2
+Time Elapsed for 10000 = 12
+Time Elapsed for 100000 = 114
+Time Elapsed for 1000000 = 1315
+-------------------MULTIPLE THREADED-------------------
+THREADS = 2
+Time Elapsed for 100 = 3
+Time Elapsed for 1000 = 1
+Time Elapsed for 10000 = 19
+Time Elapsed for 100000 = 69
+Time Elapsed for 1000000 = 809
+-------------------END-------------------
+
+-------------------START-------------------
+
+-------------------SINGLE THREADED-------------------
+Time Elapsed for 100 = 0
+Time Elapsed for 1000 = 1
+Time Elapsed for 10000 = 13
+Time Elapsed for 100000 = 113
+Time Elapsed for 1000000 = 1316
+-------------------MULTIPLE THREADED-------------------
+THREADS = 3
+Time Elapsed for 100 = 5
+Time Elapsed for 1000 = 1
+Time Elapsed for 10000 = 17
+Time Elapsed for 100000 = 62
+Time Elapsed for 1000000 = 700
+-------------------END-------------------
+
+-------------------START-------------------
+
+-------------------SINGLE THREADED-------------------
+Time Elapsed for 100 = 0
+Time Elapsed for 1000 = 1
+Time Elapsed for 10000 = 12
+Time Elapsed for 100000 = 121
+Time Elapsed for 1000000 = 1349
+-------------------MULTIPLE THREADED-------------------
+THREADS = 4
+Time Elapsed for 100 = 5
+Time Elapsed for 1000 = 1
+Time Elapsed for 10000 = 14
+Time Elapsed for 100000 = 55
+Time Elapsed for 1000000 = 633
+-------------------END-------------------
+
+-------------------START-------------------
+
+-------------------SINGLE THREADED-------------------
+Time Elapsed for 100 = 0
+Time Elapsed for 1000 = 1
+Time Elapsed for 10000 = 12
+Time Elapsed for 100000 = 119
+Time Elapsed for 1000000 = 1365
+-------------------MULTIPLE THREADED-------------------
+THREADS = 5
+Time Elapsed for 100 = 5
+Time Elapsed for 1000 = 2
+Time Elapsed for 10000 = 15
+Time Elapsed for 100000 = 62
+Time Elapsed for 1000000 = 695
+-------------------END-------------------
+
+-------------------START-------------------
+
+-------------------SINGLE THREADED-------------------
+Time Elapsed for 100 = 0
+Time Elapsed for 1000 = 2
+Time Elapsed for 10000 = 13
+Time Elapsed for 100000 = 117
+Time Elapsed for 1000000 = 1406
+-------------------MULTIPLE THREADED-------------------
+THREADS = 6
+Time Elapsed for 100 = 7
+Time Elapsed for 1000 = 1
+Time Elapsed for 10000 = 14
+Time Elapsed for 100000 = 68
+Time Elapsed for 1000000 = 845
+-------------------END-------------------
+
+-------------------START-------------------
+
+-------------------SINGLE THREADED-------------------
+Time Elapsed for 100 = 0
+Time Elapsed for 1000 = 1
+Time Elapsed for 10000 = 11
+Time Elapsed for 100000 = 119
+Time Elapsed for 1000000 = 1352
+-------------------MULTIPLE THREADED-------------------
+THREADS = 7
+Time Elapsed for 100 = 5
+Time Elapsed for 1000 = 2
+Time Elapsed for 10000 = 14
+Time Elapsed for 100000 = 59
+Time Elapsed for 1000000 = 761
+-------------------END-------------------
+
+-------------------START-------------------
+
+-------------------SINGLE THREADED-------------------
+Time Elapsed for 100 = 0
+Time Elapsed for 1000 = 1
+Time Elapsed for 10000 = 12
+Time Elapsed for 100000 = 128
+Time Elapsed for 1000000 = 1326
+-------------------MULTIPLE THREADED-------------------
+THREADS = 100
+Time Elapsed for 100 = 15
+Time Elapsed for 1000 = 25
+Time Elapsed for 10000 = 71
+Time Elapsed for 100000 = 301
+Time Elapsed for 1000000 = 4189
+-------------------END-------------------
+

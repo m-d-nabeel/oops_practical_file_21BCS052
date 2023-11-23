@@ -2,13 +2,7 @@
 #define TOLERANCE 0.5
 using namespace std;
 
-enum Index {
-    // X_VALUE = 0,
-    // Y_VALUE = 1,
-    // OR
-    X_VALUE,
-    Y_VALUE
-};
+enum Index { X_VALUE, Y_VALUE };
 
 class Point {
     static int count;
@@ -22,7 +16,7 @@ class Point {
     Point midPoint(Point &);
     static int objInstances();  // static Member function
     double l2Norm() const;
-    pair<double, double> getCords();
+    pair<double, double> getCords() const;
     // static int getCount();
 
     // CONSTRUCTORS & DESTRUCTORS
@@ -32,15 +26,14 @@ class Point {
     ~Point();               // This is the destructor
 
     // OVERLOADINGS
-
     Point operator+(const Point &) const;
     // postfix increment operator
     Point operator++(int);
     // prefix increment operator
     Point operator++();
-    Point operator-()
-        const;  // Ans 1 -> Operator overload declaration, Ans 2 -> Return type
-                // 'Point' and Argument Type 'Point'.
+    Point operator-() const;
+    // Ans 1 -> Operator overload declaration,
+    // Ans 2 -> Return type Point' and Argument Type 'Point'.
     // friend Point operator-(const Point &);
     bool operator<(const Point &) const;
     bool operator>(const Point &) const;
@@ -136,19 +129,20 @@ Point ::Point() {
     _x = _y = 0;
     cout << "Point Default Constructor is called" << endl;
 }
-
+// destructor
 Point ::~Point() {
     count--;
     cout << "Point Destructor is called for " << _x << "," << _y << endl;
-}  // destructor
+}
 
+// Parameterized constructor
 Point ::Point(double x, double y) {
     count++;
     _x = x;
     _y = y;
 
     cout << "Point Parameterized constructor is called" << endl;
-}  // Parameterized constructor
+}
 
 Point ::Point(const Point &p) {
     _x = p._x;
@@ -188,5 +182,4 @@ int Point ::count = 0;
 int Point ::objInstances() { return count; }
 
 // Ans 4
-
-pair<double, double> Point::getCords() { return {_x, _y}; }
+pair<double, double> Point::getCords() const { return {_x, _y}; }

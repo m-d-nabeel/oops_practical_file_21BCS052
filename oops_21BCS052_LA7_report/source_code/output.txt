@@ -1,0 +1,103 @@
+location.cpp
+
+Question 1 Part 1
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Default Constructor is called
+Default Location Constructor
+Address : HelloDogg
+Coords : 4,65
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Address : 
+Coords : 1.25,56
+Address : DEFAULT_ADDRESS
+Coords : 0,0
+Destructor Location is called for : 
+Point Destructor is called for 1.25,56
+Destructor Location is called for : DEFAULT_ADDRESS
+Point Destructor is called for 0,0
+Destructor Location is called for : HelloDogg
+Point Destructor is called for 4,65
+
+Question 1 Part 2
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Parameterized constructor is called
+Parametrised Location Constructor
+1.2, 2.5
+1.2, 7.9
+5939.95
+Destructor Location is called for : loc2
+Point Destructor is called for 1.2,7.9
+Destructor Location is called for : loc1
+Point Destructor is called for 1.2,2.5
+
+Question 2
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Parameterized constructor is called
+Parametrised Location Constructor
+Point Parameterized constructor is called
+Parametrised Location Constructor
+28.6899, 77.3067
+28.6699, 77.2916
+28.6899, 77.258
+28.6899, 77.3067
+28.6479, 77.2951
+28.6899, 77.258
+28.6501, 77.3138
+28.6479, 77.2951
+28.6707, 77.2668
+28.6501, 77.3138
+28.7111, 77.2603
+28.6707, 77.2668
+28.7013, 77.2915
+28.7111, 77.2603
+28.6181, 77.3209
+28.7013, 77.2915
+28.6358, 77.2871
+28.6181, 77.3209
+Total Distance = 72.7509
+Destructor Location is called for : nirman vihar, eastern
+Point Destructor is called for 28.6358,77.2871
+Destructor Location is called for : kondii Bridge, eastern
+Point Destructor is called for 28.6181,77.3209
+Destructor Location is called for : loni gol chakkar, eastern
+Point Destructor is called for 28.7013,77.2915
+Destructor Location is called for : khajori chowk, eastern
+Point Destructor is called for 28.7111,77.2603
+Destructor Location is called for : Seelampur T-oint, eastern
+Point Destructor is called for 28.6707,77.2668
+Destructor Location is called for : ISBT Ananad Vihar, eastern
+Point Destructor is called for 28.6501,77.3138
+Destructor Location is called for : jagatpuri red light, eastern
+Point Destructor is called for 28.6479,77.2951
+Destructor Location is called for : kalash nagar pusta, eastern
+Point Destructor is called for 28.6899,77.258
+Destructor Location is called for : GTB Brossing, eastern
+Point Destructor is called for 28.6899,77.3067
+Destructor Location is called for : Shahadra mandi, eastern
+Point Destructor is called for 28.6699,77.2916
+
+element.cpp
+
+Calling print function from Point, Vector and Location respectively : 
+Print function from Point
+Print function from Vector
+Print function from Point
+
