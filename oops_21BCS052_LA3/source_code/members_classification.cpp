@@ -215,5 +215,4 @@ int main() {
 // ./sfml-app
 
 // Or run command:(single line command)
-// g++ -c access_modifier.cpp -I /usr/include/SFML/ && g++ access_modifier.o -o
-// sfml-app -lsfml-graphics -lsfml-window -lsfml-system && ./sfml-app
+// g++ -c access_modifier.cpp -I /usr/include/SFML/ && g++ access_modifier.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system && ./sfml-app
