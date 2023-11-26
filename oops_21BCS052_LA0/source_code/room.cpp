@@ -1,100 +1,71 @@
 #include <iostream>
 using namespace std;
 
+class Room {
+   private:
+    float takeInput(string type);
 
-class Room{
-
-    public:
-
-        float takeInput(string type){
-            float value;
-            string t;
-            for(int i=0; i<type.length(); i++){
-                if(type[i] != ' '){
-                    t.push_back(type[i]);
-                }
-            }
-
-            cout<<"Enter "<<t<<" : "; cin>>value;
-            return value;
-        }
-
-
-        void area(int length, int width){
-            float area = length * width;
-            cout<<"Area of Room = "<< area << endl;
-        }
-
-        void volume(int length, int width, int height){
-            float volume = length * width * height;
-            cout<<"Volume of Room = "<< volume << endl;
-        }
-
-        void area(){
-            float a;
-            a = takeInput("Length") * takeInput("Width");
-            cout<<a<<endl;
-
-            // int l,b;
-            // cout<<"Enter Length : "; cin>>l;
-            // cout<<"Enter Width : ";  cin>>b;
-            // float area = l * b;
-
-            cout<<"Area of Room = "<< a << endl;
-        }
-
-        void volume(){
-            float vol;
-
-            vol = takeInput("Length") * takeInput("Width") * takeInput("Height") ;
-            cout<<vol<<endl;
-
-            int l,b,h;
-            cout<<"Enter Length : "; cin>>l;
-            cout<<"Enter Width : ";  cin>>b;
-            cout<<"Enter Height : "; cin>>h;
-            float volume = l * b * h;
-
-            cout<<"Volume of Room = "<< vol << endl;
-        }
-
-        void area(string unit);
-        void volume(string unit);
+   public:
+    void area(int length, int width);
+    void volume(int length, int width, int height);
+    void area();
+    void volume();
+    void area(string unit);
+    void volume(string unit);
 };
 
-void Room :: area(string unit){
-    int l,b;
-    float area = takeInput("Length") * takeInput("Width");
-    cout<<"Area of Room = "<<area<<unit<<" ^2"<<endl;
+float Room::takeInput(string type) {
+    float value;
+    cout << "Enter " << type << " : ";
+    cin >> value;
+    return value;
 }
 
-void Room :: volume(string unit){
-
-    int l,b,h;
-    cout<<"Enter Length : "; cin>>l;
-    cout<<"Enter Width : ";  cin>>b;
-    cout<<"Enter Height : "; cin>>h;
-
-    float volume = l * b * h;
-    cout<<"Volume of Room = "<<volume<<unit<<" ^3"<<endl;
+void Room::area(int length, int width) {
+    float roomArea = length * width;
+    cout << "Area of Room = " << roomArea << endl;
 }
 
+void Room::volume(int length, int width, int height) {
+    float roomVolume = length * width * height;
+    cout << "Volume of Room = " << roomVolume << endl;
+}
 
+void Room::area() {
+    float roomArea = takeInput("Length") * takeInput("Width");
+    cout << "Area of Room = " << roomArea << endl;
+}
 
+void Room::volume() {
+    float roomVolume =
+        takeInput("Length") * takeInput("Width") * takeInput("Height");
+    cout << "Volume of Room = " << roomVolume << endl;
+}
 
-int main(){
-    
+void Room::area(string unit) {
+    float roomArea = takeInput("Length") * takeInput("Width");
+    cout << "Area of Room = " << roomArea << " " << unit << "^2" << endl;
+}
 
-    Room r;
+void Room::volume(string unit) {
+    int length, width, height;
+    length = takeInput("Length");
+    width = takeInput("Width");
+    height = takeInput("Height");
 
-    r.area(4,6);
+    float roomVolume = length * width * height;
+    cout << "Volume of Room = " << roomVolume << " " << unit << "^3" << endl;
+}
 
-    r.volume(3,4,3);
+int main() {
+    cout << __FILE__ << endl;
+    Room room;
 
-    r.volume("cm");
-
-    r.volume();
-
+    room.area(4, 6);
+    room.volume(3, 4, 3);
+    room.volume("cm");
+    room.volume();
+    cout << "-------------------------------------------\n";
 
     return 0;
 }

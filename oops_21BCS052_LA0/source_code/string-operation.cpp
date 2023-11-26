@@ -1,114 +1,93 @@
-# include <iostream>
-# include <string.h>
-# include <vector>
-# include <map>
+#include <iostream>
+#include <unordered_set>
+#include <vector>
 
 using namespace std;
 
-class Sentence{
-    
-    private:
-        string sentence;
+class Sentence {
+   private:
+    string originalSentence;
 
-    public:
-        void takeInput();
-        void removeDups();
-        void reverseWords();
-        string reverseWord(string &);
-        void print(){
-            cout<<"Sentence = "<<sentence<<endl;
-        };
+   public:
+    void takeInput();
+    void removeDuplicates();
+    void reverseWords();
+    string reverseWord(const string &word);
+    void print() const { cout << "Sentence = " << originalSentence << endl; }
 };
 
-
-void Sentence :: takeInput(){
-    cout<<"Enter Your Sentence : ";
-    getline(cin, sentence);
+void Sentence::takeInput() {
+    cout << "Enter Your Sentence: ";
+    getline(cin, originalSentence);
 }
 
-void Sentence :: removeDups(){
-    
-    map <string, int> mans;
-    
-    vector<string> ans;
-    string s;
-    
-    for(auto i: sentence){
-        if(i!=' '){
-            s.push_back(i);
-        }else{
-            if(!mans[s]){
-                mans[s] = 1;
-                ans.push_back(s);
+void Sentence::removeDuplicates() {
+    unordered_set<string> uniqueWords;
+    vector<string> words;
+    string currentWord;
+
+    for (char character : originalSentence) {
+        if (character != ' ') {
+            currentWord.push_back(character);
+        } else {
+            if (uniqueWords.insert(currentWord).second) {
+                words.push_back(currentWord);
             }
-            s = "";
+            currentWord.clear();
         }
     }
-    if(s.length() and mans[s]!=1){
-        ans.push_back(s);
+    if (!currentWord.empty() && uniqueWords.insert(currentWord).second) {
+        words.push_back(currentWord);
     }
-    
-    sentence = "";
-    for(auto i : ans){
-        // cout<<i<<" ";
-        sentence += i;
-        sentence.push_back(' ');
+
+    originalSentence.clear();
+    for (const auto &word : words) {
+        originalSentence += word + ' ';
     }
-    
+
     print();
-
 }
 
-string Sentence :: reverseWord(string &s){
-    
-    int l = 0, r = s.length()-1;
-    while(l<r){
-        swap(s[l], s[r]);
-        l++;
-        r--;
+string Sentence::reverseWord(const string &word) {
+    string reversedWord = word;
+    int left = 0, right = reversedWord.length() - 1;
+    while (left < right) {
+        swap(reversedWord[left++], reversedWord[right--]);
     }
-    
-    return s;
-    
+
+    return reversedWord;
 }
 
-void Sentence :: reverseWords(){
-    
-    string s;
-    vector <string> ans;
-    
-    for(auto i : sentence){
-        
-        if(i!=' '){
-            s.push_back(i);
-        } else{
-            s = reverseWord(s);
-            ans.push_back(s);
-            s = "";
+void Sentence::reverseWords() {
+    string currentWord;
+    vector<string> reversedWords;
+
+    for (char character : originalSentence) {
+        if (character != ' ') {
+            currentWord.push_back(character);
+        } else {
+            reversedWords.push_back(reverseWord(currentWord));
+            currentWord.clear();
         }
-        
     }
-    if(s.length()){
-        reverseWord(s);
-        ans.push_back(s);
+    if (!currentWord.empty()) {
+        reversedWords.push_back(reverseWord(currentWord));
     }
-    sentence = "";
-    for(auto i: ans){
-        sentence += i + " ";
+
+    originalSentence.clear();
+    for (const auto &reversedWord : reversedWords) {
+        originalSentence += reversedWord + ' ';
     }
-    
 }
 
+int main() {
+    Sentence sentence;
 
-int main(){
-    
-    Sentence s;
-    
-    s.takeInput();
-    s.removeDups();
-    s.reverseWords();
-    s.print();
-    
-    
+    sentence.takeInput();
+    sentence.print();
+    sentence.removeDuplicates();
+    sentence.reverseWords();
+    sentence.print();
+
     return 0;
 }

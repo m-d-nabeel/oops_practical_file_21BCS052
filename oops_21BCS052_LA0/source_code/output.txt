@@ -1,0 +1,78 @@
+matrix.cpp
+Enter the number of rows for Matrix m1: 
+3
+Enter the number of columns for Matrix m1: 
+3
+MATRIX 1:
+1 2 3 
+4 5 6 
+7 8 9 
+
+Enter the number of rows for Matrix m2: 
+3
+Enter the number of columns for Matrix m2: 
+3
+MATRIX 2:
+9 8 7 
+6 5 4 
+3 2 1 
+
+Resultant Matrix:
+30 24 18 
+84 69 54 
+138 114 90 
+------------------------------------------
+Enter the number of rows for Matrix m1: 
+2
+Enter the number of columns for Matrix m1: 
+2
+MATRIX 1:
+1 2 
+3 4 
+
+Enter the number of rows for Matrix m2: 
+2
+Enter the number of columns for Matrix m2: 
+2
+MATRIX 2:
+5 6 
+7 8 
+
+Resultant Matrix:
+19 22 
+43 50 
+------------------------------------------
+Enter the number of rows for Matrix m1: 
+3
+Enter the number of columns for Matrix m1: 
+4
+MATRIX 1:
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+
+Enter the number of rows for Matrix m2: 
+3
+Enter the number of columns for Matrix m2: 
+3
+MATRIX 2:
+13 14 15 
+16 17 18 
+19 20 21 
+
+Multiplication not possible.
+
+Resultant Matrix:
+0 0 
+0 0 
+------------------------------------------
+room.cpp
+Area of Room = 24
+Volume of Room = 36
+Enter Length : Enter Width : Enter Height : Volume of Room = 4608 cm^3
+Enter Length : Enter Width : Enter Height : Volume of Room = 6336
+------------------------------------------
+
+Enter Your Sentence: Sentence = Yesterday, I was was wondering wondering about about these strange strange noises
+Sentence = Yesterday, I was wondering about these strange noises 
+Sentence = ,yadretseY I saw gnirednow tuoba eseht egnarts sesion 
