@@ -2,8 +2,8 @@
 # ROLL_NO="21BCS052"
 # YOUR_ROLL_NO="21BCS085"
 # for ((i=1; i<=10; i++)); do
-#     dirname="oops_${ROLL_NO}_LA${i}_report"
-#     new_dir_name="oops_${YOUR_ROLL_NO}_LA${i}_report"
+#     dirname="oops_${ROLL_NO}_LA${i}"
+#     new_dir_name="oops_${YOUR_ROLL_NO}_LA${i}"
 #     mv "$dirname" "$new_dir_name"
 #     mv "$new_dir_name/oops_${ROLL_NO}_LA${i}_report.docx" "$new_dir_name/oops_${YOUR_ROLL_NO}_LA${i}_report.docx"
 #     echo "Renamed $dirname to $new_dir_name"
